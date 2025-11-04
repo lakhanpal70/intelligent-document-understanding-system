@@ -5,29 +5,8 @@ This project implements an AI-powered document understanding system capable of r
 
 The system combines OCR, NLP, and machine learning models to automate document classification, field extraction, and decision-making — reducing manual review time and improving data accuracy.
 
-intelligent-document-understanding-system/
-│
-├── backend/                 # FastAPI backend source
-│   ├── main.py              # Main API entry point
-│   ├── routes/              # API route definitions
-│   ├── models/              # ML model loading and inference
-│   └── utils/               # Helper functions
-│
-├── frontend/                # Simple web interface
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-│
-├── models/                  # Trained model checkpoints & configs
-│
-├── training/                # Model training pipeline (PyTorch)
-│   ├── train.py
-│   └── dataset.py
-│
-├── requirements.txt
-├── Dockerfile
-├── README.md
-└── report.pdf
+<img width="682" height="684" alt="image" src="https://github.com/user-attachments/assets/a3b642ba-8b2d-4f15-8491-aaed5eee36e3" />
+
           
 
 

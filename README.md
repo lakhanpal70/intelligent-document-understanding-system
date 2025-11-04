@@ -7,27 +7,31 @@ The system combines OCR, NLP, and machine learning models to automate document c
 
 intelligent-document-understanding-system/
 │
-├── backend/              # FastAPI backend source
-│   ├── main.py           # Main API entry point
-│   ├── routes/           # API route definitions
-│   ├── models/           # ML model loading and inference
-│   └── utils/            # Helper functions
+├── backend/                 # FastAPI backend source
+│   ├── main.py              # Main API entry point
+│   ├── routes/              # API route definitions
+│   ├── models/              # ML model loading and inference
+│   └── utils/               # Helper functions
 │
-├── frontend/             # Simple web interface
+├── frontend/                # Simple web interface
 │   ├── index.html
 │   ├── style.css
 │   └── script.js
 │
-├── models/               # Trained model checkpoints & configs
+├── models/                  # Trained model checkpoints & configs
 │
-├── training/             # Model training pipeline (PyTorch)
+├── training/                # Model training pipeline (PyTorch)
 │   ├── train.py
 │   └── dataset.py
 │
 ├── requirements.txt
 ├── Dockerfile
 ├── README.md
-└── report.pdf            # Technical report
+└── report.pdf
+          
+
+
+# Technical report
 
 
 ⚙️ Features
@@ -44,34 +48,19 @@ intelligent-document-understanding-system/
 
 🏗️ System Architecture
 
-┌────────────────────────┐
-│      Frontend UI       │
-│ (HTML / CSS / JS)      │
-└────────────┬───────────┘
-             │
-             ▼
-┌────────────────────────┐
-│        FastAPI API     │
-│ (Python Backend)       │
-└────────────┬───────────┘
-             │
-             ▼
-┌────────────────────────┐
-│  Document Processing   │
-│ (PyMuPDF, OCR, NLP)    │
-└────────────┬───────────┘
-             │
-             ▼
-┌────────────────────────┐
-│     ML/NLP Model       │
-│ (Trained Checkpoints)  │
-└────────────┬───────────┘
-             │
-             ▼
-┌────────────────────────┐
-│   Decision Generator   │
-│ (Rule-based / ML)      │
-└────────────────────────┘
+┌Frontend UI (HTML / CSS / JS)
+          │
+          ▼
+FastAPI API (Python Backend)
+          │
+          ▼
+Document Processing (PyMuPDF, OCR, NLP)
+          │
+          ▼
+ML / NLP Model (Trained Checkpoints)
+          │
+          ▼
+Decision Generator (Rule-based / ML)
 
 
 

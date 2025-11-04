@@ -17,7 +17,7 @@ torch==2.3.0+cpu
 -f https://download.pytorch.org/whl/torch_stable.html
 
 # Use PaddlePaddle CPU version
-paddlepaddle==2.5.2
+paddlepaddle==3.2.1
 paddleocr==2.6.1.3
 
 transformers==4.42.4
@@ -29,3 +29,4 @@ lime==0.2.0.1
 
 # --- Testing ---
 pytest==8.3.3
+

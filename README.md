@@ -5,19 +5,34 @@ This project implements an AI-powered document understanding system capable of r
 
 The system combines OCR, NLP, and machine learning models to automate document classification, field extraction, and decision-making — reducing manual review time and improving data accuracy.
 
-📂 Project Structure
-📦 intelligent-document-understanding-system/
-├── api/                 # FastAPI backend for ML model serving
-├── frontend/            # Web interface (HTML/CSS/JS)
-├── services/            # Utility and processing services
-├── training/            # Model training and evaluation scripts
-├── tests/               # Unit and integration tests
-├── outputs/             # Model outputs and results
-├── requirements.txt     # Python dependencies
-├── .gitignore           # Ignored files and directories
-└── README.md            # Project documentation
+intelligent-document-understanding-system/
+│
+├── backend/              # FastAPI backend source
+│   ├── main.py           # Main API entry point
+│   ├── routes/           # API route definitions
+│   ├── models/           # ML model loading and inference
+│   └── utils/            # Helper functions
+│
+├── frontend/             # Simple web interface
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── models/               # Trained model checkpoints & configs
+│
+├── training/             # Model training pipeline (PyTorch)
+│   ├── train.py
+│   └── dataset.py
+│
+├── requirements.txt
+├── Dockerfile
+├── README.md
+└── report.pdf            # Technical report
+
 
 ⚙️ Features
+1️⃣ Save uploaded file 2️⃣ OCR text extraction 3️⃣ Document type detection 4️⃣ Key field extraction 5️⃣ Automated decision-making 6️⃣ Explainability visualization
+
 
 ✅ Intelligent document parsing and text extraction
 ✅ Named Entity Recognition (NER) for field detection
@@ -27,31 +42,36 @@ The system combines OCR, NLP, and machine learning models to automate document c
 ✅ Interactive web frontend for document upload and result visualization
 ✅ Dockerized deployment
 
+🏗️ System Architecture
 
-
-
-
-                +-------------------------+
-                |   Web Interface (UI)    |
-                +-----------+-------------+
-                            |
-                            ▼
-                +-------------------------+
-                |     REST API (FastAPI)  |
-                +-----------+-------------+
-                            |
-                            ▼
-            +---------------------------------------+
-            |     ML Model: Document Understanding   |
-            |  - OCR Text Extraction                 |
-            |  - NLP Field Extraction (NER)          |
-            |  - Decision Model                      |
-            +---------------------------------------+
-                            |
-                            ▼
-                +-------------------------+
-                |    Database / Storage   |
-                +-------------------------+
+┌────────────────────────┐
+│      Frontend UI       │
+│ (HTML / CSS / JS)      │
+└────────────┬───────────┘
+             │
+             ▼
+┌────────────────────────┐
+│        FastAPI API     │
+│ (Python Backend)       │
+└────────────┬───────────┘
+             │
+             ▼
+┌────────────────────────┐
+│  Document Processing   │
+│ (PyMuPDF, OCR, NLP)    │
+└────────────┬───────────┘
+             │
+             ▼
+┌────────────────────────┐
+│     ML/NLP Model       │
+│ (Trained Checkpoints)  │
+└────────────┬───────────┘
+             │
+             ▼
+┌────────────────────────┐
+│   Decision Generator   │
+│ (Rule-based / ML)      │
+└────────────────────────┘
 
 
 

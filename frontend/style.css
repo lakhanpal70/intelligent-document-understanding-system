@@ -1,0 +1,135 @@
+/* 🌈 General Page Setup */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff);
+  color: #333;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/* 🧠 Header */
+h2 {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 12px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* 📂 File Upload Box */
+input[type="file"] {
+  background: #fff;
+  border: 2px dashed #5a9;
+  padding: 14px;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: all 0.3s ease;
+}
+
+input[type="file"]:hover {
+  border-color: #2ecc71;
+  background: #f0fff5;
+}
+
+/* 🚀 Upload Button */
+button {
+  margin-top: 20px;
+  background: linear-gradient(90deg, #ff758c, #ff7eb3);
+  border: none;
+  color: white;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #ff7eb3, #ff758c);
+}
+
+/* 🧾 Result Box */
+.result {
+  white-space: pre-wrap;
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
+  color: #222;
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  transition: 0.3s ease;
+  animation: fadeIn 0.8s ease;
+}
+
+/* 📊 Decision Box */
+.decision {
+  background: #fff;
+  color: #222;
+  margin-top: 20px;
+  padding: 16px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  text-align: center;
+  font-size: 15px;
+  animation: fadeIn 0.8s ease;
+}
+
+/* ⏳ Loading Indicator */
+.loading {
+  margin: 16px 0;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.25);
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 500;
+  animation: pulse 1.2s infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+/* 🖼️ Explainability Image */
+#imageContainer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imageContainer img {
+  max-width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+#imageContainer img:hover {
+  transform: scale(1.03);
+}
+
+/* ✨ Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.6; }
+  100% { opacity: 1; }
+}
